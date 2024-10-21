@@ -1,0 +1,31 @@
+---
+app-id: com.moderncsv.ModernCSV
+runtime: org.freedesktop.Platform
+runtime-version: "24.08"
+sdk: org.freedesktop.Sdk
+command: com.moderncsv.ModernCSV
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --share=network
+  - --filesystem=home
+  - --device=dri
+modules:
+  - name: ModernCSV
+    buildsystem: simple
+    build-commands:
+      - sed -i 's|Exec=.*|Exec=com.moderncsv.ModernCSV %F|' moderncsv.desktop
+      - sed -i 's|Icon=.*|Icon=com.moderncsv.ModernCSV|' moderncsv.desktop
+      - install -Dp -m 755 moderncsv /app/bin/com.moderncsv.ModernCSV
+      - install -Dp -m 644 moderncsv.desktop /app/share/applications/com.moderncsv.ModernCSV.desktop
+      - install -Dp -m 644 com.moderncsv.ModernCSV.appdata.xml /app/share/appdata/com.moderncsv.ModernCSV.appdata.xml
+      - for icon_size in 16 32 48 64 128 256; do install -Dp -m 644 "icons/hicolor/${icon_size}x${icon_size}/apps/moderncsv.png" "/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.moderncsv.ModernCSV.png"; done
+      - for file in translations/*; do install -Dp -m 644 "${file}" "/app/${file}"; done
+      - for file in lib/*; do install -Dp -m 644 "${file}" "/app/${file}"; done
+      - for folder in plugins/*; do for file in ${folder}/*; do install -Dp -m 644 "${file}" "/app/lib/${file}"; done; done
+    sources:
+      - type: archive
+        url: https://www.moderncsv.com/release/ModernCSV-Linux-v2.1.tar.gz
+        sha256: 6dfe528e1b0fa4ff21c693e7f9e5f0aef068cccec767fb71c58a27e3943b2f26
+      - type: file
+        path: com.moderncsv.ModernCSV.appdata.xml
