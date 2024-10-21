@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.moderncsv.ModernCSV</id>
+  <name>ModernCSV</name>
+  <developer_name>PFOJ Enterprises LLC</developer_name>
+  <update_contact>evan@moderncsv.com</update_contact>
+  <url type="homepage">https://www.moderncsv.com/</url>
+  <url type="bugtracker">https://www.moderncsv.com/report-a-bug/</url>
+  <url type="help">https://www.moderncsv.com/documentation/</url>
+  <url type="contact">https://www.moderncsv.com/contact-us/</url>
+  <project_license>LicenseRef-proprietary=https://www.moderncsv.com/license-terms/</project_license>
+  <launchable type="desktop-id">com.moderncsv.ModernCSV.desktop</launchable>
+  <summary>The Ultimate CSV Editor/Viewer for Windows, Mac, and Linux</summary>
+  <description>
+    <p>Modern CSV is a powerful CSV file editor/viewer application for Windows, Mac, and Linux. Professionals at all levels of technical proficiency use it to analyze data, check files for uploading to databases, modify configuration files, maintain customer lists, and more. We designed it to compensate for the deficiencies of spreadsheet programs in handling CSV/TSV/DSV/etc. files. We strive to create a user experience our customers describe as "blissful".</p>
+    <p>Edit CSV Files with Ease</p>
+    <p>Why should it be difficult to move a column around, duplicate a row, or split cells? With Modern CSV, it’s easy.</p>
+    <p>With most commands, you can operate on multiple rows, columns, or cells at once. This makes repetitive actions effortless.</p>
+    <p>Most commands have a keyboard shortcut. If a command doesn’t have one or you don’t like the default, you can make your own shortcut.</p>
+    <p>Find and Arrange Your CSV Data </p>
+    <p>The Find/Replace feature has all the options you need to find what you’re looking for. It can also highlight matches as you type or preview Replace operations before you do them.</p>
+    <p>If you need to sort a column, double click the column label. It uses stable sort so the order of the other columns is preserved as much as possible.</p>
+    <p>Filters use a powerful syntax that is clearly described in the filter query.</p>
+    <p>Finally, you can manually hide whichever rows or columns you want. All you have to do is select and call the hide command.</p>
+    <p>Cross-Platform Consistency</p>
+    <p>Whether you’re on Windows, Mac, or Linux, Modern CSV offers a consistent, smooth experience across all platforms. Edit your CSV files seamlessly no matter what OS you’re using.</p>
+    <p>Privacy Assured</p>
+    <p>Your data remains local. It’s never sent to the cloud. Modern CSV operates entirely on your device ensuring that sensitive information stays secure. Whether you’re handling private financial records or proprietary business data, you’re in control.</p>
+    <p>View Large CSV Files Quickly</p>
+    <p>Modern CSV is not only a powerful CSV editor, it’s also a powerful CSV viewer. It comes with a read-only mode that loads large files quickly and with a small memory footprint just a fraction of the file size. In fact, it can load up to 11 times faster than Excel.</p>
+    <p>A Fully Customizable CSV Editor</p>
+    <p>We designed Modern CSV to be an application that is comfortable to use. To view your CSV files more easily, you can pick a the theme from 5 options, change cell sizes, or shade every other row or column.</p>
+    <p>For the keyboard ninjas, we gave most commands keyboard shortcuts that you can set to your liking.</p>
+    <p>You can also tell it how to handle files of different extensions. Do your .csv files have semi-colon delimiters in ANSI (Windows-1252, Western European) character encoding with CRLF newline characters? You can have it open and save files accordingly every time.</p>
+    <p>Additional Capabilites</p>
+    <ul>
+      <li>Multiple delimiters supported (TSV, PSV, TAB, etc.)</li>
+      <li>Multiple character encodings supported (UTF-8, UTF-16, ISO 8859, Windows-125x, CJK, etc.)</li>
+      <li>Export and import JSON and XML files</li>
+      <li>Multiple line endings supported (CRLF or LF)</li>
+      <li>Native Apple Silicon (M1/M2) support</li>
+      <li>Delimiter Auto-Detect</li>
+      <li>Drag and drop files or folders</li>
+      <li>Freeze header rows/columns so they’re always visible</li>
+      <li>Auto-refresh when files are edited externally (optional)</li>
+      <li>RFC 4180 compliant (optional)</li>
+      <li>Fuzzy search for all commands and files</li>
+      <li>Drag and drop groups of cells, rows, or columns</li>
+      <li>Handles poorly formatted files</li>
+      <li>Save results of filtering, sorting, etc. into separate files</li>
+      <li>Convert date/time formats (Premium feature)</li>
+      <li>Transpose entire tables or segments of a table (Premium feature)</li>
+      <li>Text case conversion (Premium feature)</li>
+      <li>Duplicate, rename or delete files from within the program (Premium feature)</li>
+      <li>Basic file analysis (Premium Business feature)</li>
+      <li>Column lookup (Premium Business feature)</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Light theme</caption>
+      <image type="source" width="657" height="370">https://www.moderncsv.com/img/customization.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Dark theme</caption>
+      <image type="source" width="657" height="370">https://www.moderncsv.com/img/imported-json-file.png</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Office</category>
+    <category>Spreadsheet</category>
+  </categories>
+  <provides>
+    <mediatype>text/csv</mediatype>
+    <mediatype>text/tab-separated-values</mediatype>
+  </provides>
+  <content_rating type="oars-1.0" />
+  <metadata_license>FSFAP</metadata_license>
+  <releases>
+    <release version="2.1" date="2024-08-22">
+      <description>
+        <p>Version 2.1</p>
+        <p>Major Features</p>
+        <ul>
+          <li>Import JSON and XML files.</li>
+          <li>Export to JSON and XML.</li>
+          <li>Pivot Table (Premium Business)</li>
+        </ul>
+        <p>Minor Features</p>
+        <ul>
+          <li>Select Entire Row(s)/Column(s) (Header Excluded) commands.</li>
+          <li>Increment/Decrement numerical values via mouse drag. Use the middle mouse button to click on a cell with a number. Drag it and hit a number and/or the ‘-‘, ‘+’, or ‘=’ (for ‘+’) buttons.</li>
+          <li>Snap to Column/Row After Scrolling settings.</li>
+          <li>Preference window: Added a search field to “Settings” and “Keyboard Shortcuts”.</li>
+          <li>ASCII Separated Values parsing standard. Uses ASCII Unit Separator and Record Separator.</li>
+          <li>Improved handling of numbers to take into account regional differences, thousands separators, and currency symbols.</li>
+          <li>Add or Update ID Column command. (Premium)</li>
+          <li>Added Statistics – Selected Cells and Statistics – Selected Cells by Columns commands. (Premium Business)</li>
+          <li>All File Analysis tabs (Statistics, Column Analysis, Unique Values, Pivot Table): Added a “Use Thousands Separators” option. (Premium Business)</li>
+          <li>Statistics: option to exclude columns without numerical data. (Premium Business)</li>
+          <li>Sum and Mean of selected cells in the status bar. (Premium Business)</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>When the read-only setting is enabled, new files created by the user are editable.</li>
+          <li>Improved representation of values in the File Analysis tabs so it wouldn’t show scientific notation until the number is exceptionally large (i.e. 10^15 or higher).</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Windows: Removed native Windows chrome and integrated the title bar into the theme.</li>
+          <li>Mac: Blended the title bar color with the theme.</li>
+          <li>General aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.08" date="2024-05-21">
+      <description>
+        <p>Version 2.0.8</p>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed Column Lookup when filters are present.</li>
+          <li>In View/Edit Filter(s), fixed an issue where some filter phrases wouldn’t display fully.</li>
+          <li>Fixed column width resizing when changing number of header columns and Auto-Fit Column Widths is enabled.</li>
+          <li>When Find All returns many matches, set the scroll bar handle’s minimum height to an acceptable size.</li>
+          <li>Fixed column resizing when removing columns in some situations.</li>
+          <li>Miscellaneous bug fixes and stability improvements.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
